@@ -1,0 +1,34 @@
+.image {
+    width: 300px;
+    margin: 50px auto 0;
+    position: relative;
+    border: 6px solid white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  }
+  .image img {
+    max-width: 100%;
+    display: block;
+  }
+  .image:before, .image:after {
+    content: "";
+    width: 300px;
+    height: 281px;
+    position: absolute;
+    z-index: -1;
+    border: 6px solid white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  }
+  .image:before {
+    background: #F5CEC6;
+    top: 0px;
+    left: -10px;
+    transform: rotate(-5deg);
+  }
+  .image:after {
+    background: #DCB8B2;
+    top: 5px;
+    left: 0px;
+    transform: rotate(4deg);
+  }
